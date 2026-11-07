@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio Pessoal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Icons -->
+  </head>
+  <body class="bg-light">
+    <header class="bg-dark text-white py-4">
+      <!--Esse bloco utiliza a tag <header> para definir o cabeçalho e aplica classes do Boots-
+trap para estilização: bg-dark cria um fundo escuro, text-white define a cor do texto,
+py-4 adiciona espaçamento vertical.-->
+      <div
+        class="container d-flex flex-column flex-md-row align-items-center justify-content-between"
+      >
+        <!--Dentro do cabeçalho, usamos a classe container
+para centralizar o conteúdo e um conjunto de classes de flexbox (d-flex, flex-column
+
+flex-md-row, align-items-center, justify-content-between) para organizar os elemen-
+tos: o nome à esquerda, o menu à direita, com ajuste automático para telas pequenas.-->
+        <h1 class="h4 mb-0">Thallison</h1>
+
+        <nav class="mt-2 mt-md-0">
+          <!--O menu de navegação está dentro de <nav> e contém três links com âncoras
+para as seções que criaremos adiante (#sobre, #projetos e #contato).-->
+          <a href="#sobre" class="text-skyblue me-5"
+            ><i class="bi bi-person-square"></i> Sobre</a
+          >
+          <!--As classes, text-white mantêm os links visíveis sobre o fundo escuro, enquanto me-5 adiciona espaçamento entre eles. Além disso, utilizamos ícones da biblioteca Bootstrap Icons (<i class=”bi ...”></i>) para tornar a navegação mais intuitiva e agradável.-->
+          <a href="#projetos" class="text-skyblue me-5"
+            ><i class="bi bi-code-slash"></i> Projetos</a
+          >
+          <a href="#contato" class="text-skyblue"
+            ><i class="bi bi-envelope"></i> Contato</a
+          >
+        </nav>
+      </div>
+    </header>
+    <section id="sobre" class="container py-5">
+      <!--site. Aplicamos a classe container para centralizar o conteúdo, e py-5 para
+
+criar um espaçamento vertical adequado. O atributo id=”sobre” é fundamental:
+ele faz essa seção ser acessada diretamente pelo menu de navegação que criamos
+anteriormente, por meio do link #sobre.-->
+      <div class="row align-items-center">
+        <!--usamos a classe row para organizar o conteúdo em colunas.-->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <!--A primeira coluna, com col-md-4, ocupa quatro das 12 partes da linha em telas
+médias ou maiores.-->
+          <img
+            src="/img/meu_perfil.jpg"
+            alt="Foto de perfil"
+            class="rounded-circle img-fluid"
+            style="max-width: 200px"
+          />
+          <!--Nela, incluímos a imagem de perfil com a tag <img>, usando
+as classes rounded-circle para deixá-la arredondada, img-fluid para que ela se
+
+ajuste ao espaço disponível, e um style que limita a largura a 200 pixels.-->
+        </div>
+        <div class="col-md-8">
+          <!--Na segunda coluna, com col-md-8, colocamos o título da seção e um pará-
+grafo com uma descrição pessoal. Você pode (e deve) editar esse texto para
+
+UNIASSELVI
+
+2
+2
+2
+
+TEMA DE APRENDIZAGEM 9
+
+refletir quem você é, o que gosta de estudar, seus interesses e seus objetivos com
+o desenvolvimento web. Esse espaço é uma ótima oportunidade para mostrar
+motivação, mesmo que você ainda esteja no início da sua jornada.-->
+          <h2>Sobre Mim</h2>
+          <p>
+            Olá! Meu nome é Thallison e sou um desenvolvedor apaixonado por
+            tecnologia e inovação. Sou estudante de desenvolvimento web e este é
+            meu primeiro portfólio. Gosto de aprender novas tecnologias e
+            construir soluções criativas para a web. Tenho interesse em
+            front-end, usabilidade e acessibilidade digital. Estou
+            constantemente em busca de novos desafios para aplicar e aperfeiçoar
+            minhas habilidades técnicas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projetos" class="container py-5 bg-white">
+      <!--A classe container organi-
+za o conteúdo centralizado na tela, py-5 garante o espaçamento vertical, e bg-white
+
+aplica um fundo branco à seção, destacando-a visualmente em relação à anterior.-->
+      <h2>Projetos</h2>
+      <div class="row">
+        <!--O conteúdo dos projetos está disposto em colunas, por meio da estrutura row
+e col-md-4. Isso significa que, em telas médias ou maiores, teremos três colunas
+por linha, e cada projeto ocupará cerca de um terço da largura.-->
+        <div class="col-md-4 mb-4">
+          <!--A classe mb-4
+adiciona espaçamento inferior entre os cards, o que é útil principalmente quando
+há mais de uma linha de projetos-->
+          <div class="card h-100 shadow-sm">
+            <!--A classe card é usada para criar um cartão visualmente distinto, h-100 faz com que o cartão ocupe toda a altura disponível, e shadow-sm adiciona uma sombra sutil para dar profundidade.-->
+            <div class="card-body">
+              <h5 class="card-title">Projeto 1</h5>
+              <p class="card-text">
+                "Descrição" Este projeto é um exemplo de como aplicar conceitos
+                de desenvolvimento web.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 2</h5>
+              <p class="card-text">
+                "Descrição" Este projeto demonstra habilidades em front-end e
+                design responsivo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="container py-5">
+      <h2>Contato</h2>
+      <form id="form-contato" autocomplete="off">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea
+            class="form-control"
+            id="mensagem"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+    <footer class="bg-dark text-white text-center py-4">
+      <!--a tag <footer>, que indica semanticamente o
+fim da página. Utilizamos as classes bg-dark, text-white, text-center e py-4 para
+criar um visual escuro, com texto branco centralizado e espaçamento vertical,
+seguindo o mesmo padrão do cabeçalho-->
+      <p class="mb-2">
+        <i class="bi bi-c-circle"></i> 2025 Meu Portfólio. Thallison.
+      </p>
+      <div>
+        <a
+          href="https://github.com/thallisonleitao00-hash"
+          class="text-white me-3"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/thallison-leitao-408685446/"
+          class="text-white me-3"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a href="mailto:thallisonleitao00@gmail.com" class="text-white"
+          ><i class="bi bi-envelope"></i
+        ></a>
+      </div>
+    </footer>
+    <button id="btn-topo"
+      class="btn btn-primary position-fixed bottom-0 end-0 m-4"style="display: none">  <!--o identificador id=”btn-topo”, que será utilizado no script JavaScript/A classe btn btn-primary aplica o estilo visual do Bootstrap, com cor azul e formato padrão.-->
+      <i class="bi bi-arrow-up-short"></i>   <!--usamos o ícone <i class=”bi bi-arrow-up-short”></i>, uma
+seta que indica claramente a função de voltar ao topo-->
+    </button>
+    <script>
+              window.addEventListener('scroll', () => {
+      const btn = document.getElementById('btn-topo');
+      btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+              }); //Esse código é dividido em duas partes. A primeira escuta o evento de rolagem da página, usando window.addEventListener(‘scroll’, ...). Sempre que o visitante rolar a tela, o JavaScript verificará a distância em pixels do topo com window. scrollY. Se esse valor for maior que 300 pixels, o botão será exibido com display: block; caso contrário, ele permanecerá oculto//
+              document.getElementById('btn-topo').addEventListener('click', () => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              });//A segunda parte cuida do comportamento do botão ao ser clicado. Usaremos document.getElementById(‘btn-topo’) para identificar o botão pelo seu ID e adicionaremos um ouvinte de evento de clique (addEventListener(‘click’, ...)). Quando o botão for acionado, a página rolará suavemente até o topo com window.scrollTo({ top: 0, behavior: ‘smooth’ })//
+    </script>
+    <script>
+        document.getElementById('form-contato').addEventListener('submit', function (event) {
+          event.preventDefault(); // Impede o envio do formulário
+          const nome = document.getElementById('nome').value;
+          const email = document.getElementById('email').value;
+          const mensagem = document.getElementById('mensagem').value;  //Esse código começa identificando o formulário pelo id=”form-contato” e adiciona um ouvinte de evento para o envio (submit).Em seguida, o JavaScript acessa o conteúdo de cada campo do formulário(nome, e-mail e mensagem) por meio do document.getElementById().value. Com esses dados em mãos, o script exibe um alerta com uma mensagem personalizada, confirmando que os dados foram recebidos. Por fim, o formulário é resetado com this.reset(), limpando todos os campos automaticamente. Embora esse formulário ainda não esteja conectado a nenhum servidor, ou seja, envie os dados para lugar nenhum, ele já proporciona uma experiência de uso realista. Quando você desejar implementar um sistema de envio de e-mails, será possível adaptar esse mesmo formulário para trabalhar com serviços externos.//
+
+          // Aqui você pode adicionar a lógica para enviar os dados do formulário para um servidor ou serviço de e-mail
+
+          alert(`Obrigado, ${nome}! Sua mensagem foi enviada com sucesso.\n\nE-mail: ${email}\n\nMensagem: ${mensagem}`);
+          
+          this.reset(); // Limpa o formulário após o envio
+        });
+    </script>
+  </body>
+</html>
